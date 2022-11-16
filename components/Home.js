@@ -12,7 +12,7 @@ function Home() {
   const [moviesData, setMoviesData] = useState([]);
 
   useEffect(() => {
-    fetch('https://test-my-movies-back-sbth29.vercel.app/')
+    fetch('https://test-my-movies-back-sbth29.vercel.app/movies')
       .then(response => response.json())
       .then(data => {
         const formatedData = data.movies.results.map(movie => {
